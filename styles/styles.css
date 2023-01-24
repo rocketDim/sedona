@@ -35,7 +35,6 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #242424;
-    background-color: #E5E5E5;
 }
 
 .button {
@@ -82,7 +81,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/*advanteges*/
+/* преимущества */
 
 .advantages-list {
     text-align: center;
@@ -98,8 +97,20 @@ body {
     color: #FFFFFF;
 }
 
+.advantages-item-inner {
+    background-color: #83B3D3;
+}
+
 .advantages-description-inner {
     color: #FFFFFF;
+}
+
+.advantages-item {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.way {
+    background: rgba(131, 179, 211, 0.2);
 }
 
 /* search */
@@ -220,6 +231,19 @@ body {
     text-transform: uppercase;
 }
 
+.favorites {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: #83B3D3;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
 .pagination-show-more {
     font-family: inherit;
     font-size: 20px;
@@ -250,4 +274,19 @@ body {
 .pagination-current {
     color: #000000;
     background: #F2F2F2;
+}
+
+/* footer */
+
+.newsletter-button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;  
 }
