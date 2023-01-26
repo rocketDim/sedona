@@ -109,6 +109,11 @@ body {
     flex-grow: 1;
 }
 
+.main-logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .main-index {
     background-image: url("/images/jpg/index-background.jpg");
     background-size: 100% auto;
@@ -123,8 +128,38 @@ body {
 /* преимущества */
 
 .advantages-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
+.advanteges-item-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item-inner {
+    width: 400px;
+    background: rgba(131, 179, 211, 0.12);
+
+}
+
+.way {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .advantages-headline {
     font-size: 24px;
@@ -136,25 +171,21 @@ body {
     color: #FFFFFF;
 }
 
-.advantages-item-inner {
+.advantages-item-page {
+    width: 400px;
     background-color: #83B3D3;
+    color:#FFFFFF;
 }
 
 .advantages-description-inner {
     color: #FFFFFF;
 }
 
-.advantages-item {
-    background-color: rgba(131, 179, 211, 0.12);
-}
-
-.way {
-    background: rgba(131, 179, 211, 0.2);
-}
 
 /* search */
 
 .search-hotel {
+    width: 1200px;;
     background-color:#FFFFFF;
     text-align: center;
 }
@@ -176,11 +207,27 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
+} 
+
+.newsletter-catalog {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;  
 }
 
 .newsletter-title {
     color: #FFFFFF;
 }
+
+.newsletter-title-catalog {
+    color: #000000;
+}
+
+.newsletter-description-catalog {
+    color: #333333;
+}
+
+
 
 .newsletter-description {
     font-weight: 400;
@@ -189,14 +236,19 @@ body {
     color: #FFFFFF;
 }
 
-/*catalog*/
-
-.inner-preview {
-    background-image: url("/images/jpg/catalog-background\ 1\(1\).jpg");
-   background-size: 100% auto;
-    background-repeat: no-repeat;
+.newsletter-button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: uppercase;  
 }
+
 
 .inner-header-title {
     color: #FFFFFF;
@@ -215,7 +267,7 @@ body {
     color: inherit;
 }
 
-/* Title */
+/* Catalog */
 
 .catalog-filter-title {
     font-weight: 700;
@@ -223,6 +275,42 @@ body {
     line-height: 26px;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.catalog-filter {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.catalog-filter-group {
+    width: 150px;
+}
+
+.catalog-filter-price {
+    width: 287px;
+}
+
+.catalog-right-column{
+    width: 1056px;
+}
+
+.button-catalog {
+    width: 160px;
+}
+
+
+.page-image {
+    background-image: url("/images/jpg/catalog-background\ 1\(1\).jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.catalog-filter-group {
+    width: 150px;
+    margin-left: 71px;
 }
 
 /* label */
@@ -315,17 +403,26 @@ body {
     background: #F2F2F2;
 }
 
+
 /* footer */
 
-.newsletter-button {
-    font-family: inherit;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    width: 110px;
+    margin-right: 100px;
+}
+
+.footer-contact {
+    width: 720px;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #83B3D3;
-    border-radius: 4px;
-    text-decoration: none;
-    text-transform: uppercase;  
+}
+
+.footer-logo {
+    margin-left: auto;
+    max-width: 115px;
 }
