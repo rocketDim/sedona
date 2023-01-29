@@ -41,6 +41,18 @@ body {
     background: #FFFFFF; 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+
 .button {
     font-family: inherit;
     font-size: 16px;
@@ -63,6 +75,9 @@ body {
 }
 
 .navigation-link {
+    display: block;
+    flex-wrap: wrap;
+    padding: 20px 16px;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -74,14 +89,25 @@ body {
 }
 
 .navigation-list {
+    display: flex;
     margin-left: 30px;
     padding: 0;
     width: 360;
+    list-style-type: none;
 }
 
 .navigation-user {
     width: 270px;
     margin-left: 282px;
+}
+
+.navigation-user .navigation-link {
+    min-width: 16px;
+    min-height: 22px;
+}
+
+.navigation-button {
+    margin-right: 70px;
 }
 
 /* pages */
@@ -127,6 +153,10 @@ body {
     text-transform: uppercase;
 }
 
+.advantages-description {
+    margin-bottom: 80px;
+}
+
 .advantages-item-list {
     margin: 0;
     padding: 0;
@@ -135,11 +165,14 @@ body {
 }
 
 .advanteges-image {
+    margin: 0;
+    padding: 0;
     background-color: #83B3D3;
     color: #FFFFFF;
 }
 
 .advantages-list {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -153,10 +186,14 @@ body {
 }
 
 .advantages-this {
+    margin: 0;
+    padding: 0;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-even {
+    margin: 0;
+    padding: 0;
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -272,18 +309,27 @@ body {
 }
 
 .footer-social-list {
+    display: flex;
+    justify-content: space-between;
     width: 110px;
     margin-right: 100px;
+    list-style-type: none;
+
+    outline: 5px solid red;
+    outline-offset: -5px;
 }
 
 .footer-contact {
-    width: 720px;
+    margin-top: 40px;
+    width: 720px;justify-content: space-between;
     text-align: center;
 }
 
 .footer-logo {
+    width: 240px;
+    margin-top: 46px;
     margin-left: auto;
-    max-width: 115px;
+    text-align: center;
 }
 
 .contacts-phone {
@@ -292,5 +338,4 @@ body {
     line-height: 40px;
     text-decoration: none;
     color: #000000;
-
 }
