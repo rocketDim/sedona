@@ -154,7 +154,7 @@
 
         <!-- Сортировка -->
         <section class="sorting-right">
-            <h2 class="visually-hidden">Результаты поиска</h2>
+            <h3 class="visually-hidden">Результаты поиска</h3>
 
             <div class="sorting">
                 <h1 class="sorting-title">Найдено гостиниц: 38</h1>
@@ -179,49 +179,46 @@
                     </ul>
                 </details>
 
-                <ul class="button-light">
-                    <li class="light">
-                        <a class="view-link">
-                            <span class="visually-hidden">Списком</span>
-                        </a>
-                    </li>
-                    <li class="light">
-                        <a class="view-link" href="#">
+                <ul class="light">
+                    <li class="light-item light-item-active">
+                        <a class="light-link light-link-cards" href="#">
                             <span class="visually-hidden">Карточками</span>
                         </a>
                     </li>
-                    <li class="light">
-                        <a class="view-link" href="#">
+                    <li class="light-item">
+                        <a class="light-link light-link-sliders" href="#">
                             <span class="visually-hidden">Слайдами</span>
+                        </a>
+                    </li>
+                    <li class="light-item">
+                        <a class="light-link light-link-list">
+                            <span class="visually-hidden">Списком</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
-
+            <!--Список гостиниц-->
             <section class="hotel-list">
-                <!--Список гостиниц-->
                 <h3 class="visually-hidden">Список гостиниц</h3>
 
                 <article class="card">
                     <img class="hotel-card-image" src="images/jpg/hotel-1(1).jpg" width="300" height="206"
                         alt="Гостиница_1">
-
-                    <h4 class="hotel-card-title">
-                        <a class="hotel-card-link" href="hotel.html">
+                    <a class="hotel-card-link" href="hotel.html">
+                        <h4 class="hotel-card-title">
                             Amara Resold & Spa
-                        </a>
-                    </h4>
-
+                        </h4>
+                    </a>
                     <p class="card-description">
                         <span class="hotel-card-description">Гостиница</span>
                         <span class="hotel-card-price">От 4000 ₽</span>
                     </p>
-                    <div class="button-hotel">
-                        <a class="hotel-card-button button" href="#">Подробнее</a>
-                        <a class="hotel-card-button button-blue" href="#">В избранное</a>
-                    </div>
-                    <p class="star star-four">
+
+                    <a class="hotel-card-more button button-secondary" href="#">Подробнее</a>
+                    <a class="hotel-card-chosen button" href="#">В избранное</a>
+
+                    <p class="card-star star star-four">
                         <span class="visually-hidden">4 звезды</span>
                     </p>
                     <p class="card-rate">Рейтинг: 8,5</p>
@@ -241,11 +238,11 @@
                         <span class="hotel-card-description">Гостиница</span>
                         <span class="hotel-card-price">От 3000 ₽</span>
                     </p>
-                    <div class="button-hotel">
-                        <a class="hotel-card-button button" href="#">Подробнее</a>
-                        <a class="hotel-card-button button-blue" href="#">В избранное</a>
-                    </div>
-                    <p class="star star-three">
+
+                    <a class="hotel-card-more button button-secondary" href="#">Подробнее</a>
+                    <a class="hotel-card-chosen button" href="#">В избранное</a>
+
+                    <p class="card-star star star-three">
                         <span class="visually-hidden">3 звезды</span>
                     </p>
                     <p class="card-rate">Рейтинг: 8,9</p>
@@ -265,11 +262,11 @@
                         <span class="hotel-card-description">Гостиница</span>
                         <span class="hotel-card-price">От 2000 ₽</span>
                     </p>
-                    <div class="button-hotel">
-                        <a class="hotel-card-button button" href="#">Подробнее</a>
-                        <a class="hotel-card-button button-blue" href="#">В избранное</a>
-                    </div>
-                    <p class="star star-two">
+
+                    <a class="hotel-card-more button button-secondary" href="#">Подробнее</a>
+                    <a class="hotel-card-chosen button button-success" href="#">В избранное</a>
+
+                    <p class="card-star star star-two">
                         <span class="visually-hidden">2 звезды</span>
                     </p>
                     <p class="card-rate">Рейтинг: 9,2</p>
@@ -289,11 +286,11 @@
                         <span class="hotel-card-description">Гостиница</span>
                         <span class="hotel-card-price">От 3000 ₽</span>
                     </p>
-                    <div class="button-hotel">
-                        <a class="hotel-card-button button" href="#">Подробнее</a>
-                        <a class="hotel-card-button button-blue" href="#">В избранное</a>
-                    </div>
-                    <p class="star star-two">
+
+                    <a class="hotel-card-more button button-secondary" href="#">Подробнее</a>
+                    <a class="hotel-card-chosen button" href="#">В избранное</a>
+
+                    <p class="card-star star star-two">
                         <span class="visually-hidden">2 звезды</span>
                     </p>
                     <p class="card-rate">Рейтинг: 9,2</p>
@@ -303,13 +300,13 @@
 
             <!-- Пагинация -->
             <div class="pagination">
-                <button class="button-blue button button-large" type="button">Загрузить ещё</button>
+                <button class="pagination-button button button-large" type="button">Загрузить ещё</button>
 
                 <div class="pagination-nav">
-                    <h3 class="visially-hidden">Список страниц</h3>
+                    <h3 class="visually-hidden">Список страниц</h3>
                     <ul class="pagination-list">
-                        <li class="pagination-item">
-                            <a class="pagination-link pagination-current">1</a>
+                        <li class="pagination-item pagination-item-active">
+                            <a class="pagination-link">1</a>
                         </li>
                         <li class="pagination-item">
                             <a class="pagination-link" href="#">2</a>
@@ -330,7 +327,7 @@
 
 
                     <div class="pagination-select">
-                        <p>Гостиниц на странице:</p>
+                        <p class="select-label">Гостиниц на странице:</p>
 
                         <details class="select">
                             <summary class="select-button">4</summary>
@@ -355,16 +352,16 @@
             </div>
 
             <section class="newsletter">
-                <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-                <p class="newsletter-description">Только полезная информация и никакого спама, честное
+                <h2 class="section-title">Подпишитесь на рассылку</h2>
+                <p class="section-description">Только полезная информация и никакого спама, <br>честное
                     бойскаутское!
                 </p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="newsletter-email field">
                         <span class="visually-hidden">Ваш Email</span>
-                        <input class="field-input" placeholder="email@example.com" type="email" name="newsletter-email">
+                        <input class="field-input" placeholder="Ваш e-mail" type="email" name="newsletter-email">
                     </label>
-                    <button class="subscribe-button button button-large" type="submit">Подписаться</button>
+                    <button class="newsletter-button button button-large" type="submit">Подписаться</button>
                 </form>
             </section>
     </main>
