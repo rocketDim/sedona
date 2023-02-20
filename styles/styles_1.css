@@ -634,6 +634,7 @@
 
 .catalog-filter-group {
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
 
     border: none;
@@ -655,8 +656,45 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 27px;
+    margin-bottom: 30px;
 }
 
+/* infrastructure */
+
+.infrastructure {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.infrastructure-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+border-radius: 4px;
+}
+
+.infrastructure:hover .infrastructure-mark {
+  border-color: #FFFFFF;
+}
+
+.infrastructure-input:disabled + .infrastructure-mark {
+  border-color: #FFFFFF;
+}
+
+.infrastructure-input[type="checkbox"]:checked + .infrastructure-mark::before,
+.infrastructure-input[type="checkbox"]:checked + .infrastructure-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #FFFFFF;
+  content: "";
+}
 
 
 /* hotel */
