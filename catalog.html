@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="icon" type="images/png" sizes="32x32" href="/favicon.png">
     <link rel="stylesheet" href="styles/styles_1.css">
 </head>
 
@@ -42,7 +43,7 @@
                     <span class="icon-button-counter">12</span>
                     <svg aria-hidden="true" focusable="false" width="19" height="18" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#000"
-                            d="M9.58 17.41a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9a5.4 5.4 0 0 1 4.4-8.7c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z">
+                            d="M9.58 17.41a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9a5.4 5.4 0 0 1 4.4-8.7c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                     </svg>
                 </a>
                 <a class="button button-secondary navigation-user-button" href="#">Хочу сюда</a>
@@ -90,9 +91,9 @@
                                     <span class="infrastructure-label">Wi-Fi</span>
                                 </label>
                             </li>
-
+                        </ul>
                     </fieldset>
-                    </ul>
+
 
 
                     <fieldset class="catalog-filter-group">
@@ -111,9 +112,9 @@
                                 <input class="infrastructure-input" type="radio" name="housing" value="apartments">
                                 <span class="infrastructure-label">Апартаменты</span>
                             </li>
-
+                        </ul>
                     </fieldset>
-                    </ul>
+
 
                     <fieldset class="catalog-filter-group catalog-filter-price">
                         <legend class="catalog-filter-title">Стоимость,₽:</legend>
@@ -161,7 +162,7 @@
             <h3 class="visually-hidden">Результаты поиска</h3>
 
             <div class="sorting">
-                <h1 class="sorting-title">Найдено гостиниц: 38</h1>
+                <h2 class="sorting-title">Найдено гостиниц: 38</h2>
 
                 <h3 class="visually-hidden">Сортировка и отображение</h3>
                 <details class="select sorting-select">
@@ -368,6 +369,7 @@
                     <button class="newsletter-button button button-large" type="submit">Подписаться</button>
                 </form>
             </section>
+        </section>
     </main>
 
     <footer class="page-footer">
@@ -442,58 +444,63 @@
 
             <form class="modal-content search-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="search-form-date field field-search">
-                  <label class="field-title" for="date-in">Дата заезда:</label>
-                  <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату" value="27 апреля 2020">
-                  <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
+                    <label class="field-title" for="date-in">Дата заезда:</label>
+                    <input class="field-input" type="text" name="date-in" id="date-in" placeholder="Укажите дату"
+                        value="27 апреля 2020">
+                    <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
                 </div>
-      
+
                 <div class="search-form-date field field-search">
-                  <label class="field-title" for="date-out">Дата заезда:</label>
-                  <input class="field-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату" value="1 сентября 2021">
-                  <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
+                    <label class="field-title" for="date-out">Дата заезда:</label>
+                    <input class="field-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату"
+                        value="1 сентября 2021">
+                    <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
-      
+
                 <div class="search-form-amount field field-search">
-                  <label class="field-title" for="adults">Взрослые:</label>
-      
-                  <div class="field-number number">
-                    <button class="number-button number-button-minus" type="button">
-                      <span class="visually-hidden">Уменьшить количество</span>
-                    </button>
-      
-                    <input class="number-input field-input" type="number" name="adults-amount" id="adults" placeholder="0" value="2" min="1" step="1">
-      
-                    <button class="number-button number-button-plus" type="button">
-                      <span class="visually-hidden">Увеличить количество</span>
-                    </button>
-                  </div>
+                    <label class="field-title" for="adults">Взрослые:</label>
+
+                    <div class="field-number number">
+                        <button class="number-button number-button-minus" type="button">
+                            <span class="visually-hidden">Уменьшить количество</span>
+                        </button>
+
+                        <input class="number-input field-input" type="number" name="adults-amount" id="adults"
+                            placeholder="0" value="2" min="1" step="1">
+
+                        <button class="number-button number-button-plus" type="button">
+                            <span class="visually-hidden">Увеличить количество</span>
+                        </button>
+                    </div>
                 </div>
-      
+
                 <div class="search-form-amount field field-search">
-                  <span class="field-title field-title-info">
-                    <label for="children">Дети:</label>
-                    <span class="field-info" id="children-info">
-                      <span class="field-info-text">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                      </span>
+                    <span class="field-title field-title-info">
+                        <label for="children">Дети:</label>
+                        <span class="field-info" id="children-info">
+                            <span class="field-info-text">
+                                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до
+                                6 лет размещаются бесплатно.
+                            </span>
+                        </span>
                     </span>
-                  </span>
-      
-                  <div class="field-number number">
-                    <button class="number-button number-button-minus" type="button">
-                      <span class="visually-hidden">Уменьшить количество</span>
-                    </button>
-      
-                    <input class="number-input field-input" type="number" name="children-amount" id="children" aria-describedby="children-info" placeholder="0" value="1" min="0" step="1">
-      
-                    <button class="number-button number-button-plus" type="button">
-                      <span class="visually-hidden">Увеличить количество</span>
-                    </button>
-                  </div>
+
+                    <div class="field-number number">
+                        <button class="number-button number-button-minus" type="button">
+                            <span class="visually-hidden">Уменьшить количество</span>
+                        </button>
+
+                        <input class="number-input field-input" type="number" name="children-amount" id="children"
+                            aria-describedby="children-info" placeholder="0" value="1" min="0" step="1">
+
+                        <button class="number-button number-button-plus" type="button">
+                            <span class="visually-hidden">Увеличить количество</span>
+                        </button>
+                    </div>
                 </div>
-      
+
                 <button class="search-form-button button button-large" type="submit">Найти</button>
-              </form>
+            </form>
         </div>
     </div>
 </body>
